@@ -1,0 +1,47 @@
+export XDG_CONFIG_HOME=$HOME/.config
+alias vim='nvim'
+
+#maven
+export M2_HOME=/opt/apache-maven-3.9.0
+export MAVEN_HOME=/opt/apache-maven-3.9.0
+export PATH=${M2_HOME}/bin:${PATH}
+
+#gradle
+export GRADLE_HOME=/opt/gradle/gradle-7.4.2
+export PATH=${GRADLE_HOME}/bin:${PATH}
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+#go
+export PATH=$PATH:/opt/go/bin
+
+#lua
+export PATH=$PATH:/opt/lua/bin
+
+#kafka
+export KAFKA_HOME=~/kafka_2.13-3.8.0
+export PATH=${KAFKA_HOME}/bin:${PATH}
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Go Global variables
+export GOROOT=/opt/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# scripts directory
+export PATH="$PATH:$HOME/.local/scripts"
+
+# tmux sessionizer
+bindkey -s ^f "tmux-sessionizer\n"
+
