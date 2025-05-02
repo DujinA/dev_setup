@@ -2,12 +2,12 @@ export XDG_CONFIG_HOME=$HOME/.config
 alias vim='nvim'
 
 #maven
-export M2_HOME=/opt/apache-maven-3.9.0
-export MAVEN_HOME=/opt/apache-maven-3.9.0
+export M2_HOME=/usr/share/maven
+export MAVEN_HOME=/usr/share/maven
 export PATH=${M2_HOME}/bin:${PATH}
 
 #gradle
-export GRADLE_HOME=/opt/gradle/gradle-7.4.2
+export GRADLE_HOME=/home/linuxbrew/.linuxbrew/bin/gradle
 export PATH=${GRADLE_HOME}/bin:${PATH}
 
 # fzf
@@ -22,7 +22,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 #go
-export PATH=$PATH:/opt/go/bin
+export PATH=$PATH:/usr/local/go/bin
 
 #lua
 export PATH=$PATH:/opt/lua/bin
@@ -35,7 +35,7 @@ export PATH=${KAFKA_HOME}/bin:${PATH}
 source <(ng completion script)
 
 # Go Global variables
-export GOROOT=/opt/go
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 

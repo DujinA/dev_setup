@@ -83,7 +83,8 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = "GitHub-Dark-Dimmed"
-font-family = "MesloLGS NF"
+font-family = "JetBrainsMono NF"
+font-feature = -calt
 
 shell-integration-features = no-cursor,no-sudo,title
 gtk-titlebar = false
