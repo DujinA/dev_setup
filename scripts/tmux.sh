@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-sudo apt-get install tmux
+sudo pacman -Syu
+sudo pacman -S tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
