@@ -92,3 +92,4 @@ gtk-titlebar = false
 cursor-style-blink = false
 cursor-invert-fg-bg = true
 
+keybind = ctrl+enter=ignore
