@@ -82,7 +82,7 @@
 
 # resize-overlay-duration = 4s 200ms
 
-theme = "GitHub-Dark-Dimmed"
+theme = "tokyonight_night"
 font-family = "JetBrainsMono NF"
 font-feature = -calt
 
