@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf zsh-autosuggestions z zsh-syntax-highlighting history fzf tmux sudo)
+plugins=(git asdf zsh-autosuggestions z zsh-syntax-highlighting history fzf sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,21 +111,28 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
 # bun completions
-[ -s "/home/aleksandar/.bun/_bun" ] && source "/home/aleksandar/.bun/_bun"
+[ -s "/home/adujin/.bun/_bun" ] && source "/home/adujin/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/home/aleksandar/.local/share/pnpm"
+export PNPM_HOME="/home/adujin/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-. "/home/aleksandar/.deno/env"
+. "/home/adujin/.deno/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval $(thefuck --alias)
 
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# opencode
+export PATH=/home/adujin/.opencode/bin:$PATH
