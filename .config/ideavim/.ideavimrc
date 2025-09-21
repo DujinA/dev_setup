@@ -95,6 +95,15 @@ inoremap <C-Space> :action CodeCompletion<CR>
 nnoremap <leader>pws :action FindInPath <C-r><C-w><CR>
 nnoremap <leader>pWs :action FindInPath <C-r><C-W><CR>
 nnoremap <leader>vh :action SearchEverywhere<CR>
+
+nnoremap <leader>rv :action IntroduceVariable<CR>
+xnoremap <leader>rv :action IntroduceVariable<CR>
+
+nnoremap <leader>ri :action Inline<CR>
+xnoremap <leader>ri :action Inline<CR>
+
+nnoremap <leader>rbb :action ExtractMethod<CR>
+xnoremap <leader>rbb :action ExtractMethod<CR>
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
 "map \r <Action>(ReformatCode)
