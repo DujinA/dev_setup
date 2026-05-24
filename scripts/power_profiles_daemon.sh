@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-paru power-profiles-daemon
+paru -S --needed --noconfirm power-profiles-daemon
