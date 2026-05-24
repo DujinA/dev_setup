@@ -111,28 +111,28 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh_profile
 
 # bun completions
-[ -s "/home/adujin/.bun/_bun" ] && source "/home/adujin/.bun/_bun"
+[ -s "/home/dujina/.bun/_bun" ] && source "/home/dujina/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/home/adujin/.local/share/pnpm"
+export PNPM_HOME="/home/dujina/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-. "/home/adujin/.deno/env"
+. "/home/dujina/.deno/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval $(thefuck --alias)
 
 
-export NVM_DIR="$HOME/.config/nvm"
+export NVM_DIR="$HOME/.config/nvm/nvm-0.39.3"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # opencode
-export PATH=/home/adujin/.opencode/bin:$PATH
+export PATH=/home/dujina/.opencode/bin:$PATH

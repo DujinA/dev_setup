@@ -82,8 +82,8 @@
 
 # resize-overlay-duration = 4s 200ms
 
-theme = "tokyonight_night"
-font-family = "JetBrainsMono NF"
+theme = TokyoNight Night
+font-family = "JetBrainsMonoNL Nerd Font Mono"
 font-feature = -calt
 
 shell-integration-features = no-cursor,no-sudo,title
@@ -93,3 +93,9 @@ cursor-style-blink = false
 cursor-invert-fg-bg = true
 
 keybind = ctrl+enter=ignore
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95
+
+# Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
+async-backend = epoll
